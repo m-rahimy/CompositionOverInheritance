@@ -1,5 +1,5 @@
 # duck
-Simple implementations of "Composition over inheritance" enwiki article's lead picture in Java.
+The article in english wikipedia "Composition over inheritance" has a lead picture that shows how composition makes it easier to reuse code. This is the simple implementation of that image.
 
 
 The credit goes to Wikipedia "Composition over inheritance" article contributors.
