@@ -2,21 +2,21 @@ package ir.rahimy.duck.entity.duck;
 
 import ir.rahimy.duck.entity.flight.Flyable;
 import ir.rahimy.duck.entity.sound.Quackable;
+import ir.rahimy.duck.entity.swim.Swimable;
 
 public abstract class AbstractDuck implements DuckLike {
 
-    //protected static String TAG = getClass().getSimpleName();
-
     protected Flyable flyBehaviour;
     protected Quackable quackBehaviour;
+    protected Swimable swimBehaviour;
 
-    public AbstractDuck(Flyable flyBehaviour, Quackable quackBehaviour) {
+    public AbstractDuck(Flyable flyBehaviour, Quackable quackBehaviour, Swimable swimBehaviour) {
         this.flyBehaviour = flyBehaviour;
         this.quackBehaviour = quackBehaviour;
+        this.swimBehaviour = swimBehaviour;
     }
 
     public abstract void display();
-    public abstract void swim();
 
     public void setFlyBehaviour(Flyable flyBehaviour) {
         this.flyBehaviour = flyBehaviour;
@@ -37,10 +37,8 @@ public abstract class AbstractDuck implements DuckLike {
     }
 
     @Override
-    public String toString() {
-        return "AbstractDuck{" +
-                "flyBehaviour=" + flyBehaviour +
-                ", quackBehaviour=" + quackBehaviour +
-                '}';
+    public void swim() {
+        swimBehaviour.swim();
     }
+
 }

@@ -1,7 +1,7 @@
 package ir.rahimy.duck.entity.adapter;
 
 import ir.rahimy.duck.entity.duck.DuckLike;
-import ir.rahimy.duck.entity.duck.TurkeyLike;
+import ir.rahimy.duck.entity.turkey.TurkeyLike;
 
 public class DuckAdapter implements TurkeyLike {
 
@@ -22,4 +22,8 @@ public class DuckAdapter implements TurkeyLike {
         duckLike.fly();
     }
 
+    @Override
+    public void swim() {
+        duckLike.swim();
+    }
 }
