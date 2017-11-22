@@ -1,5 +1,5 @@
-# duck
-The article in english wikipedia "Composition over inheritance" has a lead picture that shows how composition makes it easier to reuse code. This is the simple implementation of that image.
+# Composition Over Inheritance
+The article in english wikipedia "Composition over inheritance" has a lead picture that shows how composition makes it easier to reuse code. This is the simple implementation of that image and it will be updated.
 
 
 The credit goes to Wikipedia "Composition over inheritance" article contributors.
